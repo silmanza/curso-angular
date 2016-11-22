@@ -1,7 +1,11 @@
-<html>
+<html ng-app="myFirstApp">
 <head>
-<body>
-hola curso angular !!
-</body>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js">
+	</script>
+	<script type="text/javascript" src="app.js"></script>
 </head>
+<body ng-controller="MyFirstController">
+	<input type="text" ng-model="name">
+	<label style="color:red;">{{ name }}!</label>
+</body>
 </html>
